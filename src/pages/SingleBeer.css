@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #3c2415;
+  --secondary-color: #ffc024;
+  --white: #fff;
+}
+
+.beer {
+  margin-top: 4rem;
+}
+
+.beer img {
+  width: 20%;
+  margin-bottom: 2rem;
+}
+
+.btn-alt {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.9rem;
+  background-color: var(--secondary-color);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.beer-info p {
+  margin-bottom: 0.5rem;
+}
+
+.beer ul {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.beer li {
+  margin-bottom: 0.5rem;
+}
+
+.beer .tips span {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .section-container {
+    margin-top: 3rem;
+  }
+  .btn-container {
+    text-align: left;
+  }
+
+  .beer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .beer-info {
+    background-color: #eaeaea;
+    padding: 3rem;
+    border-radius: 5px;
+  }
+
+  .beer-img {
+    padding: 3rem;
+  }
+
+  .beer-img img {
+    width: 85%;
+  }
+
+  .beer-ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
