@@ -39,6 +39,7 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     fetchBeers();
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
